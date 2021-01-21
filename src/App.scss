@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+
+.App {
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 22.5vw 1fr;
+  justify-items: center;
+
+  font-family: "Didact Gothic";
+  text-align: center;
+
+  @media screen and (max-width: 992px) {
+    margin: 20px;
+    grid-template-columns: 1fr;
+  }
+}
+
+.loading {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+
+  transform: translateY(50vh);
+}

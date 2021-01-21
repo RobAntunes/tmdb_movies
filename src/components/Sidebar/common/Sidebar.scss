@@ -1,0 +1,82 @@
+.sidebar {
+    width: 100%;
+    position: relative;
+
+    .filters {
+        display: grid;
+        row-gap: 20px;
+
+        position: sticky;
+        top: 5vh;
+
+        color: #fff;
+
+        .search {
+            padding: 10px 15px;
+            border-radius: 10px;
+        }
+
+        .checkboxes {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-auto-flow: row;
+            justify-items: flex-start;
+
+            .checkbox_wrapper {
+                width: 100%;
+                text-align: start;
+
+                .checkbox {
+                    margin: 5px 0px;
+                    white-space: nowrap;
+                }
+
+                label {
+                    margin: 0px 5px;
+                    color: rgb(185, 185, 185);
+                }
+            }
+        }
+    }
+
+    .rating_bubble {
+        display: block;
+        color: #fff;
+    }
+
+    @media screen and (max-width: 992px) {
+        width: 60%;
+        margin-bottom: 4rem;
+
+        .filters {
+            .search {
+                width: 70%;
+                justify-self: center;
+            }
+
+            & + fieldset:first-child {
+                width: 80%;
+            }
+
+            .checkboxes {
+                justify-items: flex-end;
+
+                .checkbox_wrapper {
+                    width: 70%;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 80%;
+    }
+
+    @media screen and (max-width: 576px) {
+        width: 100%;
+
+        .filters .checkboxes {
+            font-size: 14px;
+        }
+    }
+}

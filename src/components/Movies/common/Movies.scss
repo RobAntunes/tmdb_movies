@@ -1,0 +1,55 @@
+@import "../../../../scss/variables.scss";
+
+.movies {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax($pic-width, 1fr));
+    gap: 25px 10px;
+    justify-content: center;
+
+    .movie {
+        width: $pic-width;
+        display: flex;
+        flex-direction: column;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-self: center;
+
+        border-radius: 4px;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        .splash {
+            width: $pic-width;
+            height: $pic-height;
+            display: inline-flex;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            justify-self: center;
+
+            border-radius: 4px;
+
+            &:hover {
+                box-shadow: 2px 2px 3px rgb(212, 212, 212), -2px -2px 3px rgb(212, 212, 212);
+            }
+        }
+    }
+
+    .movie_info {
+        text-align: center;
+        color: rgb(201, 163, 92);
+        margin-top: 10px;
+
+        .title {
+            font-size: 1.1rem;
+        }
+
+        .genres {
+            font-size: 0.75rem;
+        }
+    }
+}

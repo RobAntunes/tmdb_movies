@@ -8,6 +8,9 @@
 # testing
 /coverage
 
+# development
+.eslintcache
+
 # production
 /build
 

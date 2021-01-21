@@ -3,21 +3,20 @@
 A small demo movie app using the TMDB API.
 
 ## Instructions
-* Clone this repository
-* Install dependencies (npm i)
-* launch start script (npm run start)
+* Clone this repository.
+* Install dependencies. (npm i)
+* Launch start script. (npm run start)
 
 ## Quick Notes
 
 ### Tech 
-- React, bootstrapped using Create-React-App.
-- SASS, used as a simple way to scope css locally.
-- TypeScript
+* React - bootstrapped using Create-React-App
+* SASS - used as a simple way to scope css locally
+* TypeScript
 
 ### TODO:
-Perfect is the enemy of done as they say.
-Given a bit of extra time I would:
+Given some extra time I would:
 * Fix layout, responsiveness and alignment issues.
-* Implement search by title
+* Implement search by title.
 * Implement an abstraction for filter and sort pipeline (not quite sure on best approach).
-* Move global state init into HOC (?)
+* Move global state init into HOC. (?)

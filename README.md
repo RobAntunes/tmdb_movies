@@ -22,3 +22,4 @@ Given a bit of extra time I would:
 * Implement an abstraction for filter and sort pipeline (not quite sure on best approach).
 * Move global state init into HOC (?)
 * Extract more scss variables and eliminate duplicate code.
+* Add splash or spinner for init load.
